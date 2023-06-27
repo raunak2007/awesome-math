@@ -1,0 +1,124 @@
+\documentclass[12pt,a4paper,twoside]{article}
+        \usepackage{geometry}
+        \usepackage{amsmath}
+        \usepackage{amssymb}
+        \usepackage{amsthm}
+        \usepackage{array}
+        \usepackage{xy}
+        \usepackage{fullpage}
+        \usepackage[pdftex]{graphicx}
+        \usepackage{tabularx} 
+        \usepackage{fancyhdr}
+        \usepackage{enumerate}
+				\usepackage{hyperref}
+				\usepackage{draftwatermark}
+	\headheight 0cm
+	\setlength{\headsep}{18pt}
+
+\SetWatermarkText{AwesomeMath}
+\SetWatermarkScale{4}
+
+\theoremstyle{remark}
+\newtheorem*{soln}{Solution}
+
+\newcommand{\R}{\mathbb{R}}
+
+
+
+%%%%%%%%%%%%%
+%
+% Fill in important info below!
+%
+%%%%%%%%%%%%%
+
+\newcommand{\coursename}{Modular Arithmetic}
+\newcommand{\todaystopic}{Essential Techniques}
+
+%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+\lhead{\textit{\coursename}}
+\chead{}
+\rhead{\textit{AwesomeMath Summer Program 2023}}
+
+\begin{document}
+
+\section*{\todaystopic \ Practice Problems}
+
+\pagestyle{fancy}
+\setlength{\headheight}{15.2pt}
+
+\begin{itemize}
+\item You should consider induction whenever it helps to break a problem into cases, and when you suspect that harder cases can be reduced to easier ones.
+\item You should always indicate when you're using an inductive argument (e.g. ``By induction on $n$...'') If you're not sure how to describe your argument, use two distinct paragraphs labeled ``Base Case'' and ``Inductive Step.''
+\end{itemize}
+
+\begin{enumerate}
+
+
+\item Prove that $$1+3+5+\ldots+(2n-1)=n^2 \qquad \forall n \in \mathbb{N}^*.$$
+
+\item Prove that $$1^2+2^2+\ldots+n^2=\dfrac{n(n+1)(2n+1)}{6} \qquad \forall n \in \mathbb{N}^*.$$
+
+\item Prove that $$1^3+2^3+\ldots+n^3=\left(\dfrac{n(n+1)}{2}\right)^2 \qquad \forall n \in \mathbb{N}^*.$$
+
+\item Prove that $n!>3^n$ for sufficiently large positive integers $n$.
+
+\item Prove the inequality:
+$$\dfrac{1}{n + 1} + \dfrac{1}{n + 2} + \ldots + \dfrac{1}{3n + 1} > 1 \qquad \forall n \in \mathbb{N}^*.$$
+
+\item Prove that the sum of three consecutive positive cubes is divisible by $9$.
+\begin{flushright}
+\emph{Belarus Mathematical Olympiad} 1953
+\end{flushright}
+
+\item For any real $x\ge-1$, show that if $n$ is a non-negative integer, then $(1+x)^n\ge 1+nx$. (Bernoulli's Inequality)
+
+\item Prove that for all positive integers $n$ and all real numbers $x$,
+\begin{equation}
+|\sin n x| \leq n |\sin x|
+\end{equation}
+
+\item Prove that
+$$\underbrace{\sqrt{2 + \sqrt{2 + \sqrt{2 + \cdots + \sqrt{2}}}}}_{n \ \textrm{radical signs}} = 2\cos \frac{\pi}{2^{n + 1}}$$for $n \in \mathbb{N}$.
+
+\item Show that $\cos(1^\circ)$ is irrational.
+
+\item Consider $a_n=\sqrt 2^{\sqrt2^{\sqrt2^{\ldots}}}$, a tower of $n$ $\sqrt2$'s. Prove that $a_n$ is increasing and bounded above by $2$.
+
+\item Let $a_1 = 3, b_1 = 4,$ and $a_n = 3^{a_{n-1}}, \ b_n = 4^{b_{n-1}}$ when $n > 1$. Prove that $a_{1000} > b_{999}$.
+
+\item Let $n\in \mathbb{N}$, $n > 1$. Prove that
+$$\frac{1\cdot 3\cdot 5\cdot \ldots \cdot (2n - 1)}{2\cdot 4\cdot 6\cdot \ldots \cdot (2n)} < \frac{1}{\sqrt{3n + 1}}.$$
+
+\item Prove that for all natural number $n > 1$, $$\frac{4^n}{n + 1} < \frac{(2n)!}{(n!)^2}.$$
+
+\item Let $k$ be a positive integer. Prove that if $x + \dfrac{1}{x}$ is an integer, then $x^k+\dfrac{1}{x^k}$ is also an integer.
+
+\item Prove that for any $n\ge1$, a $2^n\times2^n$ checkerboard with a $1\times1$ square removed can be tiled by $2 \times 2$ tiles with one square removed.
+
+\item Find all integer solutions of the equation $$x^3 - 2y^3 - 4z^3=0.$$
+\begin{flushright}
+\emph{Moscow Mathematical Olympiad} 1955
+\end{flushright}
+
+\item Prove that the equation $$x^2 + y^2 = 3(z^2 + w^2)$$ has no positive integer solutions.
+
+\item A finite sequence of consecutive positive integers contains at least one prime number. Prove that the sequence contains a number that is relatively prime to all other terms of the sequence.
+
+\item Find all positive integers $n\geq 2$ for which $(n-2)!+(n+2)!$ is a perfect square.
+\begin{flushright}
+\emph{Titu Andreescu, Problem} J191, \emph{Mathematical Reflections} 2/2011
+\end{flushright}
+
+\end{enumerate}
+
+\newpage
+
+\end{document}
